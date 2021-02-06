@@ -20,7 +20,7 @@ gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
 # Assets
 gem 'webpacker', '~>5.2.0' # Transpile app-like JavaScript
 gem 'sass-rails' # SASS
-gem 'solidus', github: 'solidusio/solidus'
+
 
 # Translations
 # gem 'rails-i18n', '~> 6.0.0' # Translations for Rails
