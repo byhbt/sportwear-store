@@ -18,7 +18,7 @@ gem 'i18n-js', '3.5.1' # A library to provide the I18n translations on the Javas
 gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
 
 # Assets
-gem 'webpacker', '~>5.2.0' # Transpile app-like JavaScript
+# gem 'webpacker', '~>5.2.0' # Transpile app-like JavaScript
 gem 'sass-rails' # SASS
 
 
@@ -26,16 +26,11 @@ gem 'sass-rails' # SASS
 gem 'rails-i18n', '~> 6.0.0' # Translations for Rails
 
 # Solidus
-gem 'solidus_core'
-gem 'solidus_api'
-gem 'solidus_backend'
-gem 'solidus_sample'
-gem 'solidus_starter_frontend'
+gem 'solidus', github: 'solidusio/solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_paypal_commerce_platform'
 
 # To solve the issue gem 'spring'
-
 gem 'spring' # Spring speeds up development by keeping your application running in the background.
 gem 'spring-commands-rspec' # This gem implements the rspec command for Spring.
 gem 'spring-watcher-listen', '2.0.1' # Makes Spring watch the filesystem for changes using Listen
