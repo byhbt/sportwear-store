@@ -10,7 +10,7 @@ import 'channels';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-import 'translations/translations';
+// import 'translations/translations';
 
 import 'initializers/';
 import 'screens/';
