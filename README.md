@@ -1,8 +1,8 @@
 [![Build Status](CI_BADGE_URL goes here)](REPO_URL goes here)
 
-## Solidus
+## Introduction
 
-> Simple store demo with Solidus, then deploy to Heroku by Github Action.
+Build a simple ecommect website with Solidus open source and deploy to Heroku using [Github Action](https://github.com/byhbt/sportwear-store/actions).
 
 ### Prerequisites
 
