@@ -18,12 +18,22 @@ gem 'i18n-js', '3.5.1' # A library to provide the I18n translations on the Javas
 gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
 
 # Assets
-gem 'webpacker', '~>5.2.0' # Transpile app-like JavaScript
+# gem 'webpacker', '~>5.2.0' # Transpile app-like JavaScript
 gem 'sass-rails' # SASS
-gem 'solidus', github: 'solidusio/solidus'
+
 
 # Translations
-# gem 'rails-i18n', '~> 6.0.0' # Translations for Rails
+gem 'rails-i18n', '~> 6.0.0' # Translations for Rails
+
+# Solidus
+gem 'solidus', github: 'solidusio/solidus'
+gem 'solidus_auth_devise'
+gem 'solidus_paypal_commerce_platform'
+
+# To solve the issue gem 'spring'
+gem 'spring' # Spring speeds up development by keeping your application running in the background.
+gem 'spring-commands-rspec' # This gem implements the rspec command for Spring.
+gem 'spring-watcher-listen', '2.0.1' # Makes Spring watch the filesystem for changes using Listen
 
 group :development do
   gem 'foreman' # Manage Procfile-based applications
@@ -31,9 +41,6 @@ group :development do
   gem 'binding_of_caller' # Retrieve the binding of a method's caller in MRI 1.9.2+
   gem 'awesome_print' # Pretty print your Ruby objects with style -- in full color and with proper indentation
   gem 'roadie-rails' # Mailers
-  gem 'spring' # Spring speeds up development by keeping your application running in the background.
-  gem 'spring-commands-rspec' # This gem implements the rspec command for Spring.
-  gem 'spring-watcher-listen', '2.0.1' # Makes Spring watch the filesystem for changes using Listen
 end
 
 group :development, :test do
@@ -86,5 +93,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'solidus_auth_devise'
-gem 'solidus_paypal_commerce_platform'
